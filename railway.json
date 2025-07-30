@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "backend/package.json",
+      "use": "@railway/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/$1"
+    }
+  ]
+} 
